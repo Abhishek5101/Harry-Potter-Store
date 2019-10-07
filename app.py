@@ -11,4 +11,9 @@ post = {
 	"facebook": "https://www.facebook.com/jesse.phoenix.3154"
 }
 
+update = {
+	"name": "Abhishek"
+}
 collection.insert_one(post)
+collection.update_one({"_id": 0}, {"$set": {"name": "Abhishek"}})
+
