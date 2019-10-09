@@ -1,4 +1,4 @@
-from flask import Flask, request
+from flask import Flask, request, render_template
 from pymongo import MongoClient
 
 app = Flask(__name__)
@@ -28,10 +28,13 @@ post = [
 ]
 
 
+def insert_item():
+	magic_collection.insert_many(i for i in post)
+
+
 @app.route('/create')
 def create():
-	magic_collection.insert_many(i for i in post)
-	return '<h1>All posts Inserted</h1>'
+	return render_template('layout.html', post=post)
 
 
 # @app.route('/update')
@@ -51,4 +54,6 @@ def create():
 # 	return f'<h1>HOME</h1>'
 #
 
-print(post)
+# print(post)
+
+
