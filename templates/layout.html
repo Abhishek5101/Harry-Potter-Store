@@ -3,42 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <title>Example</title>
+      <link rel="stylesheet" href="static/style.css">
 
-<style>
-@import url('https://fonts.googleapis.com/css?family=Bangers&display=swap');
-#grid {
-  display: grid;
-  grid-template-rows: repeat(3, 1fr);
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
-}
-#grid > div {
-  background-color: purple;
-  color: white;
-  font-size: large;
-  font-family: 'Bangers', cursive;
-  padding: 10px;
-}
-</style>
-<div id="grid">
-  <div><a href="https://static0.srcdn.com/wordpress/wp-content/uploads/2016/11/Harry-Potter-and-Ginny-Weasley-in-Love.jpg?q=50&fit=crop&w=738&h=369">
-{{ post[0]["name"] }}</a></div>
-  <div>{{ post[1]["name"] }}</div>
-  <div>{{ post[2]["name"] }}</div>
-  <div>{{ post[3]["name"] }}</div>
-  <div>{{ post[4]["name"] }}</div>
-  <div>{{ post[5]["name"] }}</div>
-  <div>{{ post[6]["name"] }}</div>
-  <div>{{ post[7]["name"] }}</div>
-  <div>{{ post[8]["name"] }}</div>
-  <div>{{ post[9]["name"] }}</div>
-  <div>{{ post[10]["name"] }}</div>
-  <div>{{ post[11]["name"] }}</div>
-  <div>{{ post[12]["name"] }}</div>
-  <div>{{ post[13]["name"] }}</div>
-  <div>{{ post[14]["name"] }}</div>
+  <div class="row">
+  <div class="column">
+    <img src="static/img/img2.jpg">
+    <img src="static/img/img3.jpg">
+    <img src="static/img/img4.jpg">
+    <img src="static/img/img5.jpg">
+    <img src="static/img/img6.jpg">
+    <img src="static/img/img7.jpg">
+    <img src="static/img/img8.jpg">
+  </div>
+  <div class="column">
+    <img src="static/img/img9.jpg">
+    <img src="static/img/img10.jpg">
+    <img src="static/img/img11.jpg">
+    <img src="static/img/img12.jpg">
+    <img src="static/img/img13.jpg">
+    <img src="static/img/img14.jpg">
+  </div>
 
-</div>
+  </div>
 
 </head>
 <body>
