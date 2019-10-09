@@ -28,32 +28,9 @@ post = [
 ]
 
 
-def insert_item():
-	magic_collection.insert_many(i for i in post)
-
-
 @app.route('/create')
 def create():
+	magic_collection.insert_many(i for i in post)
 	return render_template('layout.html', post=post)
-
-
-# @app.route('/update')
-# def update():
-# 	collection.update_one({"_id": 1}, {"$set": {"name": "Abhishek Kulkarni"}})
-# 	return '<h1>One post updated</h1>'
-#
-#
-# @app.route('/delete')
-# def delete():
-# 	collection.delete_one({"_id": 2})
-# 	return 'Delete Successful'
-#
-#
-# @app.route('/home')
-# def index():
-# 	return f'<h1>HOME</h1>'
-#
-
-# print(post)
 
 
