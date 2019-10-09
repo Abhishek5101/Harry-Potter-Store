@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Example</title>
+
 <style>
+@import url('https://fonts.googleapis.com/css?family=Bangers&display=swap');
 #grid {
   display: grid;
   grid-template-rows: repeat(3, 1fr);
@@ -11,14 +13,16 @@
   grid-gap: 10px;
 }
 #grid > div {
-  background-color: gray;
+  background-color: purple;
   color: white;
-  font-size: 4vw;
+  font-size: large;
+  font-family: 'Bangers', cursive;
   padding: 10px;
 }
 </style>
 <div id="grid">
-  <div>{{ post[0]["name"] }}</div>
+  <div><a href="https://static0.srcdn.com/wordpress/wp-content/uploads/2016/11/Harry-Potter-and-Ginny-Weasley-in-Love.jpg?q=50&fit=crop&w=738&h=369">
+{{ post[0]["name"] }}</a></div>
   <div>{{ post[1]["name"] }}</div>
   <div>{{ post[2]["name"] }}</div>
   <div>{{ post[3]["name"] }}</div>
