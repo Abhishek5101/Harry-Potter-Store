@@ -1,15 +1,16 @@
+
 @import url('https://fonts.googleapis.com/css?family=Bangers&display=swap');
 .row {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 4px;
+  padding: 50 40px;
 }
 
 /* Create four equal columns that sits next to each other */
 .column {
   flex: 25%;
   max-width: 25%;
-  padding: 0 4px;
+  padding: 50 40px;
 }
 
 .column img {

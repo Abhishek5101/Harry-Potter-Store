@@ -1,7 +1,9 @@
 from flask import Flask, request, render_template
 from pymongo import MongoClient
+from flask_bootstrap import Bootstrap
 
 app = Flask(__name__)
+Bootstrap(app)
 
 cluster = MongoClient("mongodb+srv://abhi:contrapro472@contractor-l3tgn.mongodb.net/admin?retryWrites=true&w=majority")
 db = cluster["store"]
