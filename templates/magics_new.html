@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block content %}
+<form method="POST" action="/magics">
+<fieldset>
+    <legend>New Magic</legend>
+    <p>
+        <label>New Magic </label><br>
+        <input type='text' name='name' required>
+    </p>
+    <p>
+        <label> Enter Description for your Magic </label><br>
+        <input type='text' name='description' required>
+    </p>
+    <div class='form-group'>
+    <button class='btn btn-primary' type='submit'>Save Magic</button>
+    </div>
+
+
+</fieldset>
+</form>
+{% endblock %}

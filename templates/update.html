@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% block content %}
+<hr size="50">
+<div class="box">
+    <a href="/magic/{{magic._id}}">
+        <div class="media-content">
+            <div class="content">
+            <img src="{{magic.image}}">
+                <hr size="10">
+                <strong>{{magic.name}}</strong><br>
+                <small>{{magic.description}}</small> <br>
+            </div>
+        </div>
+    </a>
+</div>
+<form action="/update/{{magic._id}}" method="POST">
+    <fieldset>
+    <legend>New Magic</legend>
+    <p>
+        <label>Update Magic </label><br>
+        <input type='text' name='name' required>
+    </p>
+    <p>
+        <label> Update Description for your Magic </label><br>
+        <input type='text' name='description' required>
+    </p>
+    <div class='form-group'>
+    <button class='btn btn-primary' type='submit'>Save Magic</button>
+    </div>
+
+
+</fieldset>
+</form>
+<form action="/delete/{{magic._id}}" method="POST">
+    <button type="submit">Delete</button>
+</form>
+{% endblock %}
+

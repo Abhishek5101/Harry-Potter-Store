@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block content %}
+<button class="btn btn-dark"><a href="/magics/new">Add a Magic </a></button>
+<hr size="50">
+{% for magic in magics %}
+<div class="box">
+    <a href="/magic/{{magic._id}}">
+        <div class="media-content">
+            <div class="content">
+            <img src="{{magic.image}}">
+                <hr size="10">
+                <strong>{{magic.name}}</strong><br>
+                <small>{{magic.description}}</small> <br>
+            </div>
+        </div>
+    </a>
+</div>
+{% endfor %}
+
+{% endblock %}

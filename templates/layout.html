@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Example</title>
+    <title>{{ asd }}</title>
       <link rel="stylesheet" href="static/style.css">
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <ul class="nav justify-content-end">
@@ -16,9 +16,13 @@
 
   <div class="row">
   <div class="column">
-    <img src="static/img/img2.jpg">
-    <h4>{{ post[0]["name"] }}</h4>
-    <button type="button" class="btn btn-success"  onclick="alert('Hello world!')">Add to Cart!</button>
+
+    <div>
+      <img src="static/img/img2.jpg">
+      <h4>{{ post[0]["name"] }}</h4>
+      <button type="button" class="btn btn-success"  onclick="alert('Hello world!')">Add to Cart!</button>
+    </div>
+
 
     <img src="static/img/img3.jpg">
     <h4>{{ post[11]["name"] }}</h4>
@@ -46,7 +50,9 @@
   <div class="column">
     <img src="static/img/img9.jpg">
     <h4>{{ post[5]["name"] }}</h4>
-    <button type="button" class="btn btn-success"  onclick="alert('Hello world!')">Add to Cart!</button>
+    <form action="cart" method="post">
+    <button type="button" class="btn btn-success"  onclick="alert('Hello world!')" name="{{ post[5]["name"] }}">Add to Cart!</button>
+    </form>
     <img src="static/img/img10.jpg">
     <h4>{{ post[6]["name"] }}</h4>
     <button type="button" class="btn btn-success"  onclick="alert('Hello world!')">Add to Cart</button>
@@ -74,3 +80,17 @@
 
 </body>
 </html>
+<!--{% for i in post %}-->
+<!--<div class="row">-->
+<!--  <div class="col-sm-6 col-md-4">-->
+<!--    <div class="thumbnail">-->
+<!--      <img src="..." alt="...">-->
+<!--      <div class="caption">-->
+<!--        <h3>Thumbnail label</h3>-->
+<!--        <p>...</p>-->
+<!--        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
+<!--&lt;!&ndash;{% endfor %}&ndash;&gt;-->
