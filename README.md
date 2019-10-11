@@ -1,5 +1,8 @@
 # Harry-Potter-Store
 
 
-credits:
-https://harrypotter.fandom.com/wiki/List_of_spells
+This is a simple webiste for a class with a Python-Flask Server and MongoDB Database
+
+Users can add different items(magics) from the Harry Potter Universe and also be able to edit and delete items, hence 
+the full CRUD functionality.
+
