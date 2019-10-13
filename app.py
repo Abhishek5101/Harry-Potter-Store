@@ -12,7 +12,7 @@ images = [
 
 app = Flask(__name__, template_folder='templates')
 
-cluster = MongoClient("mongodb+srv://abhi:contrapro472@contractor-l3tgn.mongodb.net/admin?retryWrites=true&w=majority")
+cluster = MongoClient("mongodb+srv://abhi:contrapro472@contractor-l3tgn.mongodb.net/admin?retryWrites=false&w=majority")
 db = cluster["store"]
 magic_collection = db["magic"]
 
