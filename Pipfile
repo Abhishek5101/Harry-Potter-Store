@@ -9,6 +9,7 @@ verify_ssl = true
 flask = "*"
 flask-pymongo = "*"
 gunicorn = "*"
+dnspython = "*"
 
 [requires]
 python_version = "3.7"
