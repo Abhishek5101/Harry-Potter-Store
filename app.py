@@ -2,7 +2,6 @@ from flask import Flask, request, render_template, url_for, redirect
 from pymongo import MongoClient
 from bson.objectid import ObjectId
 from random import choice
-
 images = [
 	"https://static0.srcdn.com/wordpress/wp-content/uploads/2016/11/Snake-from-Harry-Potter-and-the-Chamber-of-Secrets.jpg?q=50&fit=crop&w=738&h=369",
 	"https://static3.srcdn.com/wordpress/wp-content/uploads/2016/11/Troll-in-Harry-Potter.jpg?q=50&fit=crop&w=738&h=369,",
